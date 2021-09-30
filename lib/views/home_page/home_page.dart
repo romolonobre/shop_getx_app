@@ -71,8 +71,8 @@ class HomePage extends GetView {
                 ItemButtonsWidget(
                   onTapIncrease: () =>
                       controller.increaseShorts(), // Increase Function call
-                  onTapdescrease: () =>
-                      controller.descreaseShorts(), // decrease Function call
+                  onTapdecrease: () =>
+                      controller.decreaseShorts(), // decrease Function call
                 ),
 
                 /// We use $Obx function to acess the
@@ -107,8 +107,8 @@ class HomePage extends GetView {
                 ItemButtonsWidget(
                   onTapIncrease: () =>
                       controller.increaseShoes(), // Increase Function call
-                  onTapdescrease: () =>
-                      controller.descreaseShoes(), //decrease Function call
+                  onTapdecrease: () =>
+                      controller.decreaseShoes(), //decrease Function call
                 ),
               ],
             ),

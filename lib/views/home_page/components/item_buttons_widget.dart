@@ -10,11 +10,11 @@ import 'package:get/get_rx/src/rx_typedefs/rx_typedefs.dart';
 class ItemButtonsWidget extends StatelessWidget {
   ItemButtonsWidget({
     required this.onTapIncrease,
-    required this.onTapdescrease,
+    required this.onTapdecrease,
   });
 
   final VoidCallback onTapIncrease;
-  final VoidCallback onTapdescrease;
+  final VoidCallback onTapdecrease;
 
   final CartController controller = Get.put(CartController());
   @override
@@ -51,7 +51,7 @@ class ItemButtonsWidget extends StatelessWidget {
               Colors.blue[200],
             ),
           ),
-          onPressed: onTapdescrease,
+          onPressed: onTapdecrease,
 
           /// DECREASE ICON
 

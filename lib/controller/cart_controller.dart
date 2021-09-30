@@ -25,13 +25,13 @@ class CartController extends GetxController {
     shorts++;
   }
 
-  /// We use this function to Increase the cart
+  /// We use this function to decrease the cart
   /// everytime the user clic.
   /// We use with the help of $GetX a snackbar to
   /// show a message to the user if the use try to
   /// go below 0
   ///
-  void descreaseShorts() {
+  void decreaseShorts() {
     if (shorts.value <= 0) {
       Get.snackbar(
         'GetShop',
@@ -66,7 +66,7 @@ class CartController extends GetxController {
   /// go below 0
   ///
 
-  void descreaseShoes() {
+  void decreaseShoes() {
     if (shoes.value <= 0) {
       Get.snackbar('GetShop', 'Item can\'t be less than 0',
           backgroundColor: Colors.blue[200],
