@@ -29,13 +29,13 @@ class TotalPage extends StatelessWidget {
             height: 80,
           ),
 
-          // This widgtes draws the total sum
-          // of the cart on the page center
+          // This widgtes draws the total itens
+          // of the cart on the $Totalpage center
 
           Align(
             alignment: Alignment.center,
             child: Text(
-              'Total Items : ${controller.sum} ', // we call the sum
+              'Total Items : ${controller.cart.length} ', // we call the sum
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 22,
