@@ -44,12 +44,9 @@ class CartController extends GetxController {
           color: Colors.white,
         ),
       );
-
-      //Increase value
-      //
-    } else {
-      shorts--;
+      return;
     }
+    shorts--;
   }
 
   /// We use this function to Decrease the cart
@@ -77,10 +74,8 @@ class CartController extends GetxController {
             color: Colors.white,
           ));
 
-      //Decrease value
-
-    } else {
-      shoes--;
-    }
+      return;
+    } //Decrease value
+    shoes--;
   }
 }
