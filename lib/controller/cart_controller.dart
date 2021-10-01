@@ -33,17 +33,6 @@ class CartController extends GetxController {
   ///
   void decreaseShorts() {
     if (shorts.value <= 0) {
-      Get.snackbar(
-        'GetShop',
-        'Item can\'t be less than 0',
-        backgroundColor: Colors.blue[200],
-        colorText: Colors.white,
-        duration: const Duration(seconds: 5),
-        icon: const Icon(
-          Icons.notification_important_outlined,
-          color: Colors.white,
-        ),
-      );
       return;
     }
     shorts--;
